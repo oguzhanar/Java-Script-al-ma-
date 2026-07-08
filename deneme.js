@@ -43,7 +43,7 @@
 // selamVer();
 
 
-// ---------------------------STRİNG VERİ TİPİ--------------------------------------
+//* ---------------------------STRİNG VERİ TİPİ--------------------------------------
 // let isim = "Oğuzhan bu sene 20 yaşında olcak"  string oldugu icin tırnak işareti lazım
 // console.log(isim);
 // console.log(typeof isim); //hangi veri tipinde oldugunu yazar (burdaki string)
@@ -53,7 +53,7 @@
 // console.log(sayi1);
 // console.log(typeof sayi1) //veri tipi number
 
-// ---------------------------NUMBER VERİ TİPİ--------------------------------------
+//* ---------------------------NUMBER VERİ TİPİ--------------------------------------
 // let a = "5";
 // let b = "2";
 // console.log(a+b);
@@ -65,13 +65,13 @@
 // console.log(soru+cevap)
 // 
 
-//---------------------------BOOLEAN VERİ TİPİ--------------------------------------
+//*---------------------------BOOLEAN VERİ TİPİ--------------------------------------
 //boolean: true ve falsetan olusur. 
 // let a = 3;
 // let b = 12;
 // let sonuc = a+b;
 // console.log(sonuc>15) //false 
-// ---------------------------NULL VERİ TİPİ--------------------------------------
+//* ---------------------------NULL VERİ TİPİ--------------------------------------
 
 // let a = null;
 // console.log(a) //null
@@ -79,14 +79,14 @@
 // let b = null;
 // b = 12;
 // console.log(b) //output 12 verir 
-//---------------------------UNDEFİNED VERİ TİPİ--------------------------------------
+//*---------------------------UNDEFİNED VERİ TİPİ--------------------------------------
 
 // let a;
 
 // console.log(a); değer atamadığımız için undefined 
 // console.log(typeof a); 
 
-//---------------------------OBJECT VERİ TİPİ--------------------------------------
+//*---------------------------OBJECT VERİ TİPİ--------------------------------------
 
 // let insan = {
 //     isim : "Oğuzhan",
@@ -100,7 +100,7 @@
 //let rakamlar = [1,2,3,4,5];  
 //console.log(typeof rakamlar) **object veri tipi
 
-//---------------------------FUNCTİON VERİ TİPİ--------------------------------------
+//*---------------------------FUNCTİON VERİ TİPİ--------------------------------------
 // let func = function(){
 //     console.log("Merhaba");
 // }
@@ -109,9 +109,9 @@
 
 
 
-                         //ARİTMETİK OPERATÖRLER  
+//!------------------------------------ARİTMETİK OPERATÖRLER------------------------------- 
 
-//--------------------------- (+) OPERATORU --------------------------------------
+//*--------------------------- (+) OPERATORU --------------------------------------
 
 // console.log(5+3);
 
@@ -125,14 +125,14 @@
 // console.log(note1 + note2);
 
 
-//--------------------------- (*) OPERATORU --------------------------------------
+//*--------------------------- (*) OPERATORU --------------------------------------
 
 // let sayi1 = 10;
 // let sayi2 = 23.6;
 
 // console.log(sayi1*sayi2);
 
-//--------------------------- (/) OPERATORU --------------------------------------
+//*--------------------------- (/) OPERATORU --------------------------------------
 
 // let note1 = 100
 // let note2 = 70 
@@ -140,7 +140,7 @@
 // let sonuc = (note1 + note2)/2 
 // console.log(sonuc)
 
-//-------------------- (%) MOD ALMA OPERATORU (kalanı bulmak icin)-----------------
+//*-------------------- (%) MOD ALMA OPERATORU (kalanı bulmak icin)-----------------
 
 /**
  10/3 = kalan 1
@@ -150,7 +150,7 @@
 // console.log(10%3); //konsolda 1 yazıyor
 
 
-//------------------------------ (--)(++) OPERATORLERI---------------------------
+//*------------------------------ (--)(++) OPERATORLERI---------------------------
 //++ bir arttırmak icin -- bir azaltmak icin 
 // let a = 10;
 // a++;//11
@@ -159,17 +159,17 @@
 // a--;//12
 // console.log(a); //output 12 veriyor  
 
-//------------------------------ (**) ÜS ALMA OPERATORLERI---------------------------
+//*------------------------------ (**) ÜS ALMA OPERATORLERI---------------------------
 
 //console.log(2**5)
 
 
 
 
-//--------------------------------ATAMA OPERATORLERİ----------------------------------
+//?--------------------------------ATAMA OPERATORLERİ----------------------------------
 
 
-//---------------------------------(==) OPERATORU-------------------------------------
+//*---------------------------------(==) OPERATORU-------------------------------------
 // == : eşittir 
 // console.log(5==4) //false yazar çünkü eşit değil 
 // let a = 5;
@@ -180,53 +180,53 @@
 //console.log(3=="3") true cünkü veri tipinin önemi yok içindeki değer önemli
 
 
-//---------------------------------(===) OPERATORU-------------------------------------
+//*---------------------------------(===) OPERATORU-------------------------------------
 //hem tiplerin hemde değerlerinin eşit olup olmadığına bakar 
 
 // console.log(5===5); true çünkü hepsi eşit
 // console.log(5==="5") false çünkü veri tipleri aynı değil (number ve)
 
-         //---------------------------------(+=) OPERATORU-------------------------------------
+//*---------------------------------(+=) OPERATORU-------------------------------------
 
 // let sayi = 4;
 //  //sayi = sayi +2; uzun yol 
 // sayi+=2 
 // console.log(sayi);
 
-//---------------------------------(-=) OPERATORU-------------------------------------
+//*---------------------------------(-=) OPERATORU-------------------------------------
 
 // let sayi = 4;
 // sayi-=3; 
 // console.log(sayi)  output 1 verir 
 
 
-//---------------------------------(/=) OPERATORU-------------------------------------
+//*---------------------------------(/=) OPERATORU-------------------------------------
 
 // let sayi = 10;
 // sayi /= 3; 
 // console.log(sayi) //output 3.3333 
 
-//---------------------------------(%=) OPERATORU-------------------------------------
+//*---------------------------------(%=) OPERATORU-------------------------------------
 
 // let sayi = 12;
 // sayi %= 5;
 // console.log(sayi)
 
-//--------------------------------MANTIK OPERATORLERİ----------------------------------
+//*--------------------------------MANTIK OPERATORLERİ----------------------------------
 
-//---------------------------------(&&) VE OPERATORU-------------------------------------
+//*---------------------------------(&&) VE OPERATORU-------------------------------------
 // VE anlamına gelir yan yana yazılan olaylardan 1 tane false olsa bile output false çıkar. 
 // let yas = 20;
 // let para = 3500;
 // let saglikliMi = false;
 // console.log(yas>18 && para>3000 && saglikliMi==true)   //false olarak gelir çünkü sağlık kısmında false var
 
-//---------------------------------(||) VEYA OPERATORU-------------------------------------
+//*---------------------------------(||) VEYA OPERATORU-------------------------------------
 // 9 tane False 1 tane True olsa bile sonuc True çıkar 
 
 // console.log(5>2 || 4>5 || 3>7); true çıkar çünkü 5>2 true değeri veriyor
 
-//---------------------------------(!) DEĞİL OPERATORU-------------------------------------
+//*---------------------------------(!) DEĞİL OPERATORU-------------------------------------
 //tersini alır 5 3 ten büyük True çıkar ama True değerini tersine çeviri 
 
 // console.log( !(5>3) );
@@ -243,7 +243,8 @@
 
 
 
-/*--------------------------------------DİYALOG KUTULARI--------------------------------------------
+/*
+?--------------------------------------DİYALOG KUTULARI--------------------------------------------
     -ALERT
     -PROMPT
     -CONFİRM
@@ -251,10 +252,10 @@
 
 //console.log(window);
 
-//---------------------------------ALERT KUTUSU------------------------------------
+//?---------------------------------ALERT KUTUSU------------------------------------
 //alert("zırtttttt") 
 
-//---------------------------------PROMPT KUTUSU------------------------------------
+//?---------------------------------PROMPT KUTUSU------------------------------------
 
 // let isim = prompt("isminizi giriniz :");
 // let yas = prompt("yaşınızı giriniz :");
@@ -263,13 +264,14 @@
 // console.log("İsminiz :"+ isim);
 // console.log("Yasınız :"+ yas );
 
-//---------------------------------CONFIRM KUTUSU------------------------------------
+//?---------------------------------CONFIRM KUTUSU------------------------------------
 
 // let sonuc = confirm("Silmek istediğinize emin misiniz");
 // console.log (sonuc);
 
 
-/*--------------------------------------KOŞUL YAPILARI--------------------------------------------
+/*
+?--------------------------------------KOŞUL YAPILARI--------------------------------------------
 
 if(koşul){
     kodlar
@@ -279,7 +281,7 @@ else{
 }
 */
 
-//---------KOŞUL YAPILARI
+//!---------KOŞUL YAPILARI
 
 
 // let not = 23;
@@ -304,7 +306,7 @@ else{
 // };
 
 
-//------------ORTALAMA BULMA
+//*------------ORTALAMA BULMA
 // vize1 %30  vize2 %30  final %40
 
 // let vize1 = Number(prompt("1. Vize notunuzu giriniz :"));
@@ -322,7 +324,8 @@ else{
 
 
 
-/* --------------- IF, ELSE IF, ELSE YAPISI
+/*
+? --------------- IF, ELSE IF, ELSE YAPISI
 if(koşul){
     kodlar
 }
@@ -363,7 +366,8 @@ else{
 // }
 
 
-/*------------------------ÇOKLU IF YAPISI
+/*
+?------------------------ÇOKLU IF YAPISI
 if(koşul){
     kodlar
 }
@@ -377,7 +381,7 @@ if(koşul){
 */
 
 
-//------------------------VÜCUT KİTLE ENDEKSİ İF ELSE ÇALIŞMA SORUSU 
+//!------------------------VÜCUT KİTLE ENDEKSİ İF ELSE ÇALIŞMA SORUSU 
 
 // let kilo = Number(prompt("Kilonuzu giriniz : "));
 // let boy = Number(prompt("Boyunuzu giriniz : "));
@@ -399,73 +403,435 @@ if(koşul){
 //     alert("İdeal kilonun çok üstündesiniz (morbid obez) " +sonuc)
 // }
 
-//------------------------------BENZİN İSTASYONU ÖRNEK
+//!------------------------------BENZİN İSTASYONU ÖRNEK
 
-let dizel = 24.53  , benzin = 22.25, LPG = 11.1;
-const yeniSatir = "\r\n";
-const yakitMetni = "1-Dizel, Litre Fiyatı: 24.53 " +yeniSatir 
-+"2-Benzin, Litre Fiyatı: 22.25" +yeniSatir
-+"3-LPG, Litre Fiyatı: 11.1" +yeniSatir
-+"Yakıt türünü seçiniz : ";
+// let dizel = 24.53  , benzin = 22.25, LPG = 11.1;
+// const yeniSatir = "\r\n";
+// const yakitMetni = "1-Dizel, Litre Fiyatı: 24.53 " +yeniSatir 
+// +"2-Benzin, Litre Fiyatı: 22.25" +yeniSatir
+// +"3-LPG, Litre Fiyatı: 11.1" +yeniSatir
+// +"Yakıt türünü seçiniz : ";
 
-let yakitTipi = prompt(yakitMetni);
-if(yakitTipi=="1"|| yakitTipi=="2"|| yakitTipi=="3"){
-let yakitLitresi = Number (prompt("Yakıt litresini giriniz : "))
-let bakiye = Number (prompt("Bakiyenizi giriniz : "))
+// let yakitTipi = prompt(yakitMetni);
+// if(yakitTipi=="1"|| yakitTipi=="2"|| yakitTipi=="3"){
+// let yakitLitresi = Number (prompt("Yakıt litresini giriniz : "))
+// let bakiye = Number (prompt("Bakiyenizi giriniz : "))
 
 
-    if(yakitTipi=="1"){
-        let odenecekTutar = yakitLitresi*dizel
-        if(odenecekTutar<bakiye){
-            bakiye = bakiye-odenecekTutar
-            alert("Yakıt alma işlemi başarılı. Tekrar görüşmek üzere" + yeniSatir
-            +"Kalan Bakiye : " +(bakiye))
+//     if(yakitTipi=="1"){
+//         let odenecekTutar = yakitLitresi*dizel
+//         if(odenecekTutar<bakiye){
+//             bakiye = bakiye-odenecekTutar
+//             alert("Yakıt alma işlemi başarılı. Tekrar görüşmek üzere" + yeniSatir
+//             +"Kalan Bakiye : " +(bakiye))
             
-    }
-    else{
-        alert("Bakiyeniz yeterli değil" +yeniSatir
-        +"Ödenecek Tutar : " + odenecekTutar +yeniSatir
-        +"Bakiye : " + bakiye +yeniSatir
-        +"Eksik Tutar : " + (odenecekTutar-bakiye))
-        }
+//     }
+//     else{
+//         alert("Bakiyeniz yeterli değil" +yeniSatir
+//         +"Ödenecek Tutar : " + odenecekTutar +yeniSatir
+//         +"Bakiye : " + bakiye +yeniSatir
+//         +"Eksik Tutar : " + (odenecekTutar-bakiye))
+//         }
 
-    }   
-    else if(yakitTipi=="2"){
-        let odenecekTutar = yakitLitresi*benzin
-        if(odenecekTutar<bakiye){
-            bakiye = bakiye-odenecekTutar
-            alert("Yakıt alma işlemi başarılı. Tekrar görüşmek üzere" + yeniSatir
-            +"Kalan Bakiye : " +(bakiye))
+//     }   
+//     else if(yakitTipi=="2"){
+//         let odenecekTutar = yakitLitresi*benzin
+//         if(odenecekTutar<bakiye){
+//             bakiye = bakiye-odenecekTutar
+//             alert("Yakıt alma işlemi başarılı. Tekrar görüşmek üzere" + yeniSatir
+//             +"Kalan Bakiye : " +(bakiye))
         
-    }
-    else{
-        alert("Bakiyeniz yeterli değil" +yeniSatir
-        +"Ödenecek Tutar : " + odenecekTutar +yeniSatir
-        +"Bakiye : " + bakiye +yeniSatir
-        +"Eksik Tutar : " + (odenecekTutar-bakiye))
-        }
-}
-else if(yakitTipi=="3"){
-    let odenecekTutar = yakitLitresi*LPG   
-    if(odenecekTutar<bakiye){
-        bakiye = bakiye-odenecekTutar
-        alert("Yakıt alma işlemi başarılı. Tekrar görüşmek üzere" + yeniSatir
-        +"Kalan Bakiye : " +(bakiye))
+//     }
+//     else{
+//         alert("Bakiyeniz yeterli değil" +yeniSatir
+//         +"Ödenecek Tutar : " + odenecekTutar +yeniSatir
+//         +"Bakiye : " + bakiye +yeniSatir
+//         +"Eksik Tutar : " + (odenecekTutar-bakiye))
+//         }
+// }
+// else if(yakitTipi=="3"){
+//     let odenecekTutar = yakitLitresi*LPG   
+//     if(odenecekTutar<bakiye){
+//         bakiye = bakiye-odenecekTutar
+//         alert("Yakıt alma işlemi başarılı. Tekrar görüşmek üzere" + yeniSatir
+//         +"Kalan Bakiye : " +(bakiye))
         
-    }
-    else{
-        alert("Bakiyeniz yeterli değil" +yeniSatir
-        +"Ödenecek Tutar : " + odenecekTutar +yeniSatir
-        +"Bakiye : " + bakiye +yeniSatir
-        +"Eksik Tutar : " + (odenecekTutar-bakiye))
-        }
+//     }
+//     else{
+//         alert("Bakiyeniz yeterli değil" +yeniSatir
+//         +"Ödenecek Tutar : " + odenecekTutar +yeniSatir
+//         +"Bakiye : " + bakiye +yeniSatir
+//         +"Eksik Tutar : " + (odenecekTutar-bakiye))
+//         }
 
+// }
+
+
+
+
+// }
+// else{
+//     alert("Lütfen geçerli bir yakıt numarası seçin")
+// }
+
+
+
+/*
+?-------------------------SWITCH CASE-------------------
+
+switch(deger){
+
+    case1:
+        kodlar
+    break;
+
+    case2:
+        kodlar
+    break;
+
+    case3:
+        kodlar
+    break;
+
+    default:
+        kodlar
+    break;
+}  */
+
+//!-----------------CASE ÖRNEK 
+
+// let sayi = prompt("1 ile 5 arasında bir sayı giriniz")
+
+// switch(sayi){
+
+//     case"1":
+//         console.log("girilen sayı 1dir")
+//     break;
+
+//     case"2":
+//         console.log("girilen sayı 2dir")
+//     break;
+
+//     case"3":
+//         console.log("girilen sayı 3tür")
+//     break;
+
+//     case"4":
+//         console.log("girilen sayı 4tür")
+//     break;
+
+//     case"5":
+//         console.log("girilen sayı 5tir")
+//     break;
+
+//     default:
+//         console.log("okuma yazman yok mu oevladı 1 ve 5 arası gireceksin")
+//     break;
+//}
+
+
+
+//!-----------------CASE ÖRNEK 2
+
+// let yeniSatir = "\r\n"
+// let gun = "1-Pazartesi" +yeniSatir
+// +"2-Salı" + yeniSatir
+// +"3-Çarşamba" + yeniSatir
+// +"4-Perşembe" + yeniSatir
+// +"5-Cuma" + yeniSatir
+// +"6-Cumartesi" +yeniSatir
+// +"7-Pazar" +yeniSatir   
+// +"Lütfen gelmek istediğiniz günü 1 ile 7 arasında seçin"
+
+// let deger = prompt(gun);
+// switch(deger){
+//     case"1":
+//         alert("Pazartesi gününü seçtiniz");
+//         break;
+
+//     case"2":
+//         alert("Salı gününü seçtiniz");
+//         break;
+
+//     case"3":
+//         alert("Çarşamba gününü seçtiniz");
+//         break;
+    
+//     case"4":
+//         alert("Perşembe gününü seçtiniz");
+//         break;
+
+//     case"5":
+//         alert("Cuma gününü seçtiniz");
+//         break;
+
+//     case"6":
+//         alert("Cumartesi gününü seçtiniz");
+//         break;
+
+//     case"7":
+//         alert("Pazar gününü seçtiniz");
+//         break;
+
+//     default:
+//         alert("1 ile 7 arasında seçeceksin aşkım")
+
+// }
+
+
+
+// !  ----------------SWITCH CASE ATM ÖRNEGİ  parayı çekebilmek için ihtiyacınız olan tutar: "+ (cekilecekTUtar-bakiye)
+/*
+1-bakiye görüntüleme
+2-para çekme
+3-para yatırma 
+4-çıkış  */
+
+// let yeniSatir= "\r\n"
+// let bakiye = 2000 
+
+
+// let metin= "1-Bakiye Görüntüleme"+ yeniSatir
+// +"2-para çekme"+yeniSatir
+// +"3-para yatırma"+yeniSatir
+// +"4-çıkış"+yeniSatir
+// +"Lütfen yapmak istediğiniz işlemi seçin"+yeniSatir
+
+// let secim = prompt(metin);
+
+// switch(secim){
+//     case"1":
+//         alert("Bakiyeniz " +bakiye);
+//         break;
+
+//     case"2":
+//         let cekilecekTutar = Number (prompt("çekmek istediğiniz tutarı girin : "));
+//         if(cekilecekTutar<bakiye){
+//             bakiye = bakiye-cekilecekTutar
+//             alert("para çekme işlemi başarılı. Kalan bakiyeniz : "+ bakiye)
+//         }else{
+//             alert("para çekme işlemi başarısız. Güncel bakiyeniz :" +bakiye + " " + yeniSatir 
+//                 + "cekmek istediginiz tutar : " + cekilecekTutar +yeniSatir
+//             + "eksik olan tutar : " + (cekilecekTutar-bakiye));}
+//         break;
+
+//     case"3":
+//         let paraYatirma = Number(prompt("yatırmak istediğiniz tutarı giriniz: "))
+//         bakiye=bakiye+paraYatirma
+//         alert("hesabınızdaki yeni bakiye: "+bakiye +yeniSatir
+//             +"Hesabınızdaki eski bakiye : " + (bakiye-paraYatirma)
+//         )
+//         break;
+    
+//     case"4":
+//         confirm("Çıkış yapmak istediğinize emin misiniz");
+//         break;
+
+//     default:
+//         prompt("1 ile 4 arasında bir değer girin")
+//         break;
+// }
+
+//! -----------------------TYT PUAN HESAPLAMA SORUSU
+
+/* 
+?sorular
+1-türkce 40 
+2-matematik 40
+3-sosyal bilimler 20 
+4-fen bilimleri 20 
+
+----> 100 puanı ösym veriyor 
+----> okul puanı max 60 veriyor   */
+
+// let turkceDogru, turkceYanlis = 0;
+// let matematikDogru , matematikYanlis = 0;
+// let sosyalDogru, sosyalYanlis = 0;
+// let fenDogru, fenYanlis = 0;
+// let puan = 0;
+// let okulPuan = 0;
+
+// let yeniSatir = "\r\n"
+// let mesaj = "Tyt puan hesaplama sitesine hosgeldiniz" +yeniSatir
+// +"1-Puan hesapla " +yeniSatir
+// +"2-Çıkış yap";
+
+// let islemler = prompt(mesaj);
+// switch(islemler){
+//     case"1":
+
+//         okulPuan = Number(prompt("Okul puanınızı giriniz"))
+//         turkceDogru = Number (prompt("Türkçe doğru sayısı: "));
+//         turkceYanlis = Number (prompt("Türkçe yanlış sayısı: "));
+
+//         matematikDogru = Number(prompt("Matematik doğru sayısı: "));
+//         matematikYanlis = Number(prompt("Matematik yanlış sayısı: "))
+
+//         sosyalDogru = Number(prompt("Sosyal bilimler doğru sayısı: "))
+//         sosyalYanlis = Number(prompt("Sosyal bilimler yanlış sayısı: "))
+
+//         fenDogru = Number(prompt("Fen bilimleri doğru sayısı: "))
+//         fenYanlis = Number(prompt("Fen bilimleri yanlış sayısı: "))
+
+//         let dogruSayisi= turkceDogru + matematikDogru + sosyalDogru + fenDogru
+//         let yanlisSayisi= turkceYanlis + matematikYanlis + sosyalYanlis + fenYanlis
+//         let netSayi = dogruSayisi - (yanlisSayisi/4)
+//         puan = (netSayi*4) + ((okulPuan*60) / 100) + 100
+
+//         alert("Toplam TYT puanınız : " +puan)
+        
+//         break;
+    
+//     case"2":
+//         confirm("Çıkış yapmak istediğinize emin misiniz?")
+//         break;
+
+//     default:
+//         prompt("Lütfen 1 ya da 2'yi tuşlayın")
+//         break; 
+// }
+
+/* 
+TODO -----------------------TÜR DÖNÜŞÜMLERİ--------------------------- 
+
+     ? strings, numbers, booleans, undefined and null. (ilkel)
+     *object, function  (gelişmiş) */
+
+//let a = 5;
+//let b = "10";
+//let b = Number("10") //* bu da bir öntem string değerimiz number'a dönüşüyor
+
+//console.log(a+b) //*510 yapar cunku biri number biri string
+
+//let c = Number(b);
+    //console.log(typeof c); //* number veri tipinde 
+//console.log(a+c) //* 15 yapıyor çünkü b değerini numbera çevirdik 
+
+//! BAŞKA BİR YOL 
+
+//console.log(a+Number(b)); //* yine 15 yapıyor hemde başka değişken tanımlamaya uğraşmadan kısaca hallediyoruz.
+
+// let a = 8
+// let b = parseInt("12")
+// console.log(a+b)    //* 20 değerini verir çünkü parseInt stringi numbera çevirdi
+
+
+
+//? --------------------NUMBER TİPİNDEN STRİNG TİPİNE ÇEVİRME 
+
+// let x = String(55);
+// console.log(typeof x); //* string formatında yazıldı 
+// console.log(x);  //*55 sonucunu verdi
+
+// let x = (55). toString();
+// console.log(typeof x); //* yine string formatında çünkü toString yazılan şeyi stringe çevirmeye yarıyor
+// console.log(x);  //* output 55 olarak çıkıyor
+
+
+// let sonuc = String(true);
+// console.log(typeof sonuc); //* boolean tipinden stringe çevirdik 
+// console.log(sonuc); //* outputumuz "true" olarak çıkar
+
+
+
+// let rakamlar = String([1,2,3,4,5]);
+// console.log(typeof rakamlar) //* başına string yazarak OBJECT tipi veriden STRİNG veri tipine çevirdik.
+
+// let a = [" 1 ", 2 , 3 , 4, " 5 "];
+// console.log(String(a[1]) + 5 )     //todo  output 25 olur çünkü a1 deki 2 sayımızı string tipine çeviriyoruz ve 5 ile toplamaya 
+//                                    //todo  girince 2 ve 5 yan yana gelir (string+number) olduğu için
+
+
+
+// console.log(Number(a[0])+ 5 )    //?  output değerimiz 6 olur ÇÜNKÜ a0 daki değer "1" string bir değer ama numbera çevirdik
+//                                  //?  ve 1 değerini elde ettik sonra da 5 ile toplayıp 6 sayısını elde ettik.
+
+
+
+
+//!----------------------------DÖNGÜLER------------------------------------
+//? 1-For, 2-While, 3-Do-While, 4-ForEach
+/* 
+todo--------------FOR DÖNGÜSÜ
+
+for(degisken; koşul; arttırma-azaltma){
+    kodlar 
 }
+*/
+// for(let i = 1; i<=10; i++){
+//     console.log(i);
+// }
+
+/* 
+*---------FOR DÖNGÜSÜ ÖRNEK ÇALIŞMASI
+* 1 den 10a kadar çiftleri yazdıralım  */
+
+// for (let i=0; i<=10; i+=2){
+//     console.log(i)
+// }
 
 
 
+// for(let i=0; i<=10; i++){
+//     if(i%2==1)
+//         console.log("tekkk")
+//     else{
+//         console.log("çifttt")
+//     }
+// }
 
+//* 50den 1 e kadar gidip toplamlarını bulalım
+
+// let toplam = 0;
+// for(let i=50; i>=1; i--){
+//     toplam +=i;
+//     console.log(i);
+// }
+// console.log("Toplam : "+toplam);
+
+
+/* 
+todo--------------WHİLE DÖNGÜSÜ 
+while(koşul){
+    kodlar
+    sayacın değerini atarız
 }
-else{
-    alert("Lütfen geçerli bir yakıt numarası seçin")
-}
+*---------WHİLE DÖNGÜSÜ ÖRNEK ÇALIŞMASI  
+? 1den 10a kadar yazdıralım  */
+
+// let sayac = 1;
+// while(sayac<=10){
+//     console.log(sayac);
+//     sayac++;
+  
+// }
+
+// let sayac = 0;
+// while(sayac<=10){
+//     if(sayac % 2 == 0){
+//         console.log(sayac)
+//     }
+//     sayac++
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
