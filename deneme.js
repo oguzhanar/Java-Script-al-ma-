@@ -814,24 +814,239 @@ while(koşul){
 //     sayac++
 // }
 
+/*
+ ?--------------------DO WHİLE DÖNGÜSÜ 
+ do{
+    kodlar
+ }while(koşul);
+
+ */
+// let sayac = 1;
+
+// do {
+//     console.log(sayac)
+//     sayac++;
+// } while (sayac<=10);
+
+
+
+// let sayac = 11;
+// do {
+//     console.log(sayac)
+//     sayac++;
+// } while (sayac<=10);   //11 10a eşit ya da küçük olmamasına rağmen konsolda output olarak 11 çıktı çünkü 
+// do-while döngüsünde koşul aşşağıda kaldığı için eğer sayımız koşulu sağlamasa bile döngü 1 defa dönüyor ve
+// output veriyor 
+
+//* 1den 20ye kadar olan tek sayıların toplamı
+
+// let a = 1
+// let toplam = 0
+// do {
+//     if(a%2 == 1){
+//         toplam+=a
+//     }
+//     a++;
+// } while (a<=20);
+// console.log(toplam)
+
+
+/* 
+!------------------BREAK VE CONTINUE     
+*1den 10a kadar yazdıralım 8de çıkalım 
+*/
+// let sayac = 1;
+// while(sayac<=10){
+//     console.log(sayac);
+//     if(sayac == 8){;
+//         break};
+//     sayac++;
+// }   
+
+
+//? çarpım tablosu örneği 
+
+// for(let i=1; i<=10; i++){
+//     for(let j=1; j<=10; j++){
+//     console.log(i+"x"+j+"="+(i*j))
+//     }
+//     console.log("----------------------------------")
+// }   
+
+
+//*asal sayı bulma uygulaması
+
+// let sayi = Number(prompt("Sayı Giriniz: "));
+// let sonuc = true;
+
+// for(let i=2; i<= Math.floor(sayi/2); i++){
+//     if(sayi %i == 0){;
+//         sonuc=false
+//         break;
+//     }
+// }
+// if(sonuc){
+//     alert(sayi+ "asal sayıdır")
+// }else{
+//     alert(sayi+ "asal sayı değildir")
+// }
+
+//*faktoriyel sayı bulma uygulaması
+
+// let sayi = Number(prompt("Bir sayı giriniz"))
+// let carpim =1;
+
+// for(i=1; i<=sayi; i++){
+//     carpim = carpim*i
+// }
+
+// alert("sonuç : " + carpim)
+
+
+//*armstrong sayısı örneği   153
+
+// let toplam = 0;
+// let sayi = prompt("Sayıyı giriniz")
+
+// for( let i=0; i<sayi.length; i++){
+//     let rakam = sayi.charAt(i);
+//     toplam += rakam*rakam*rakam ;
+// }
+// if(Number(sayi) == toplam) {
+//     alert("Armstrong sayısıdır")
+// }else{
+//     alert("Armstorng sayısı değildir")
+// }
+
+
+/* 
+!!!----------------------------------------------METODLAR-----------------------------------------------
+*-------parametresiz ve geriye değer döndürmeyen metod
+
+*  function yazdir(){
+*     kodlar yazılacak   
+*  }
+
+*/
+
+// function yazdir(){             
+//     console.log("oğuzhan")        
+// }                             //bu kısım yazdırmak için yetmiyor bu paketlenmiş bir halde bekliyor onu açmamiz lazim 
+
+// yazdir();                     //açan kısım da bu fonksiyonu konsola yazdırdı
+
+
+// function topla(){
+//     console.log(5+7)
+// }
+// topla();
+
+//*-------parametreli metod tanımlamak
+
+// function yazdir(isim,soyisim){
+//     debugger;
+//     console.log(isim+ " " + soyisim)
+// }
+// debugger;
+// yazdir("oguzhan","ar");
 
 
 
 
+// cube(3)
+
+// function cube(sayi){
+//     console.log(sayi*sayi*sayi)
+// }
+
+// cube(5);
+// cube(4);
+
+
+
+// let yas = Number(prompt("Yaş giriniz: "))
+// kontrolEt(yas);
+
+// function kontrolEt (yas){
+//     if(yas>=18){
+//         alert("Ehliyeti alabilirsiniz");
+//     }else{
+//         alert("Ehliyeti alamazsınız");
+//     }
+// }
+
+
+//? Geriye değer döndüren metot tanımlamak
+//*  console.log satırını gerekli durumlarda kıvırcık parantezlerin dışarısına çıkarmak için 
+//*  kullanılır
+
+
+// let donenDeger = cube(3);
+// console.log(donenDeger)
+
+// function cube(sayi){
+//     let sonuc = sayi*sayi*sayi;
+//     return sonuc;   
+// }
 
 
 
 
+//!---------------          !METİNDE KAÇ TANE SEÇİLEN HARFTEN VAR        ÖRNEK SORU 
+// let metin = ("Told her come and take a seat, pardon me 'Til you come, I can regular it and shake it and break it");
+// let harf = prompt("Harf giriniz");
+// let sonuc = bul(harf);
+// alert("Harf Sayısı: " + sonuc);
 
 
 
+// function bul(harf){
+//     let toplam=0;
+//     for(let i =0; i<metin.length; i++){
+//         if(metin.charAt(i).toLowerCase()===harf.toLowerCase()){
+//             toplam+=1;
+//         }
+//     } 
+//     return toplam;
+// }
 
 
+//!---------------      MÜKEMMEL SAYI        ÖRNEK SORU 
+// perfectNumber(496)
+
+// function perfectNumber(number){
+//     let toplam = 0;
+//     for (let i=2; i<=number/2; i++){
+//         if(number%i==0){
+//             toplam+=i;
+//         }
+//     }
+//     toplam+=1+number;
+
+//     if(toplam==number*2){
+//         console.log("Seçilen sayı mükemmel sayıdır")
+//     }else{
+//         console.log("Seçilen sayı mükemmel sayı değildir")
+//     }
+
+// }
 
 
+// //?---------------- DECIMAL TO BINARY CONVERSION ORNEK SORU 
 
+// decimalToBinary(10);
 
-
-
+// function decimalToBinary (number){
+//     let binary = "";
+//     while(true){
+//         binary+=(number%2).toString();
+//         number =Math.floor(number/2);
+//         if(number==1){
+//             binary+=1            
+//             break;
+//         }
+//     }
+//     console.log(binary);
+// }
 
 
