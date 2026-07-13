@@ -1050,3 +1050,329 @@ while(koşul){
 // }
 
 
+//! DİZİLERE BASLANGIC
+
+// let sayilar= [0,1,2,3,4,5,6,7,8,9,"Oğuzhan",12,4.5,"Ali"];
+
+// console.log(sayilar[10]);
+// sayilar[13]= "Mehmet"
+// console.log(sayilar[13])
+
+
+// let isimler = ["enes","kübra", "oğuzhan", "ceren"];
+// //console.log(isimler[3])
+// console.log(isimler)
+
+// let dizi1 = []; 
+// let dizi2 = new Array();
+
+// dizi1[0] = "Oğuz"
+// dizi1[1] = "Emir"
+
+// dizi1[0] = "Alper"
+// dizi1[1] = "Çağan"
+
+
+//! FOREACH DÖNGÜSÜ
+//* dizilerde kullanılır.
+
+// let isimler = ["Oğuz", "Çağan","Emir","Alper","Ege"];
+
+// isimler.forEach(function(isim){
+//     console.log(isim)
+// });
+
+// //? FOR DÖNGÜSÜ İLE 
+// for(let i=0; i<isimler.length; i++){
+//     console.log(isimler[i]);
+// }
+
+//todo WHILE DONUGUSU İLE 
+// let sayac = 0;
+// while (sayac < isimler.length){
+//     console.log(isimler[sayac]);
+//     sayac++;
+// }
+
+
+//!----------------------------DİZİNİN METOTLARI----------------------------------------
+
+// let arabalar1 = ["bmw","mercedes","toyota","opel","mazda"];
+// let arabalar2 = ["hundai", "volkswagen", "seat",]
+
+
+//todo PUSH METODU  *dizinin sonuna eleman ekler, dizinin uzunluğunu döner.
+// arabalar.push ("porsche")
+     // return length;
+
+// console.log(arabalar);
+
+//todo UNSHIFT METODU *dizinin başına eleman ekler, dizideki eleman saysını döner.
+// arabalar.unshift("honda")
+// console.log(arabalar);
+
+//*   POP METODU   *dizinin sonundan eleman siler,dizinin uzunluğunu döner.
+
+// let silineneleman = arabalar.pop();
+// console.log(arabalar);
+// console.log(silineneleman)
+
+//*SHIFT METODU   *dizinin basından eleman siler, dizinin uzunluğunu döner.
+// let silinenEleman = arabalar.shift();
+// console.log(arabalar);
+// console.log(silinenEleman)
+
+//? SPLICE METODU (index,incdex)   * eleman eklemek ve silmek için kullanılır. 
+// arabalar.splice(0,0,"hundai");
+// arabalar.splice(3,0,"cupra");
+// arabalar.splice(5,1)  //opel silindi  5.indexten baslayıp 1 tane eleman sil demek 
+// console.log(arabalar);
+
+//? TO STRING METODU   * diziyi stringe çevirebilir
+// console.log(typeof arabalar); // object veri tipi 
+// let stringArabalar= arabalar.toString();
+// console.log(stringArabalar);   //output bmw,mercedes,toyota,opel,mazda--> string tipinde,,  typeof string
+
+//todo JOIN METODU  *diziyi stringe çevirir ve araya eleman ekleyebilir.
+// let stringArabalar = arabalar.join("-");
+// console.log (stringArabalar);  //bmw-mercedes-toyota-opel-mazda
+
+//todo CONCAT METODU  *dizileri birleştirmek için kullanılır. 
+// let yeniDizi = arabalar1.concat(arabalar2);
+// console.log(yeniDizi);
+
+//* SLICE METODU  *diziyi istenilen yerden bölüp yeni bir dizi oluşturur.
+// console.log(arabalar1)
+// let yeniDizi = arabalar1.slice(2,4)
+// console.log(yeniDizi);
+
+//* LENGTH METODU  *dizini uzunluğunu verir.
+// console.log(arabalar1.length);
+
+//* REVERSE METODU  *dizinin elemanlarını ters çevirmeye yarar.
+// console.log(arabalar1);
+// arabalar1.reverse();
+// console.log(arabalar1);
+
+
+//? SPLIT METODU  *belirli bir ifadeye göre bölüp diziye çevirmek.
+// let isimler = "Oğuz, Alper, Emir";
+
+// let isimlerDizi = isimler.split(",");
+// console.log(isimlerDizi)
+// console.log(typeof isimlerDizi)
+
+//? INDEXOF METHODU    *elemanın index numarasını verir.
+// let indexmet = arabalar1.indexOf("bmw");    içeriyorsa 0 içermiyorsa -1 değeri veriyor 
+// console.log(indexmet)
+
+//? INCLUDES METHODU   *verilen elemanı içeriyor mu ona bakılır.
+// let inc = arabalar1.includes("bmw")     eğer varsa true, yoksa false değeri veriyor. (boolean tipinde)
+// console.log(inc)
+
+
+
+//!----------------ARROW FUNCTİON 
+
+// function yazdir(){
+//     console.log("merhaba");
+// } 
+// yazdir()                     //bunu yapmak yerine aşşağıdaki yolu yapıcaz 
+
+
+// const yazdir=()=>{
+//     console.log("merhaba")
+// }
+// yazdir()
+
+
+// const yazdir = (firstName, lastName)=>{
+//     console.log("Merhaba" , firstName,lastName)
+// }
+// yazdir("Oğuzhan", "Ar")
+
+
+// const yazdir = firstname=>console.log("Merhaba",firstname)      //* tek satırda hallettik 
+// yazdir("Oğuzhan")
+
+
+
+// const  kupAl = x=> x*x*x
+
+// document.addEventListener("click",()=>{
+
+// })
+
+// console.log("Sonuç",kupAl(5))
+
+
+//!-------------Destructing Kullanımı 
+// let langs = ["C#", "C++", "JavaScript", "Python"]
+// let lang1, lang2, lang3, lang4
+
+// // lang1 = langs[0]
+// // lang2 = langs[1]
+// // lang3 = langs[2]
+// // lang4 = langs[3]
+// [lang1, lang2, lang3, lang4] = langs  //* destructing budur 
+
+
+// console.log(lang1,lang2,lang3,lang4)
+
+
+// const hesapla = (a,b)=>{
+//     const toplam =a+b
+//     const cikar = a-b
+//     const carp = a*b
+//     const bol = a/b
+
+//     const dizi = [toplam,cikar,carp,bol]
+//     return dizi
+// } 
+
+// let [x,y,z,w] = hesapla(10,2)
+// console.log(x,y,z,w)
+
+
+
+// const person = {
+//     firstName : "Oğuz",
+//     lastName : "Ar",
+//     salary:50000,
+//     age:20
+// }
+
+// //let isim,soyisim,maas,yas
+
+// // isim = person.firstName
+// // soyisim = person.lastName
+// // maas = person.salary
+// // yas = person.age
+
+// let { firstName ,lastName,salary,age} = person
+// console.log(firstName,lastName,salary,age)
+
+
+
+
+//!-------------SPREAD OPERATORU 
+
+// let numbers = [10,20,30,40]
+// function add(a,b,c,d){
+//     console.log(a+b+c+d)
+// }
+// //*ESKİ YÖNTEM
+// // add(numbers[0],numbers[1],numbers[2],numbers[3],)
+
+// add(...numbers)
+
+
+// const diller1 = ["java","C#"]
+// // const diller2 = ["php","python",diller1[0], diller1[1]]
+// const diller2 = ["php","python", ...diller1]
+
+// console.log(diller2)
+
+
+// const array1 = ["enes","ali","oğuz","emir"]
+// // let array2 = []
+
+// // array2[0] = array1[0]
+// // array2[1] = array1 [1]
+// // array2[2] = array1 [2]
+// // array2[3] = array1 [3]
+
+// array2 = [...array1]
+
+// console.log(array2)
+
+
+//!--------- FOR in & FOR of DÖNGÜLERİ
+
+// let names = ["Oğuz","Çağan","Emir","Alper"]
+// names.forEach(function(name){
+//     console.log(name)
+// })
+// names.forEach(name=>console.log(name))
+
+//*FOR in DÖNGÜSÜ  
+//? for in döngüsü dizi üzerinde dönerken o dizideki elemanların index numarasını verir 
+
+//degiskenTanimlama, in , diziIsmi
+// for (let name in names){
+//     console.log(name, names[name])
+// }
+
+//*FOR of DÖNGÜSÜ
+//? in döngüsünün tam tersi 
+
+// for (let isim of names){
+//     console.log(isim, names.indexOf(isim))
+// }
+
+
+//! MAP -----> key(anahtar) value(değer)
+
+// const map1 = new Map();
+
+// // let value;
+// map1.set(81,"Düzce")
+// map1.set(34,"İstanbul")
+// map1.set(6,"Ankara")
+// map1.set(35, "İzmir")
+
+// // console.log(map1.get(81))
+// // value = map1.sizes
+// // console.log(value)
+
+// console.log(map1.has(81))
+
+
+//*For Of map üzerinde  dönebiliriz. 
+
+// for(let [key,value] of map1){
+//     console.log(key,value)
+// }
+
+// const keys = Array.from(map1.keys()) 
+// console.log(keys)
+
+// keys.forEach(key => {
+//     console.log(key)
+// });
+
+// for(let key of map1.keys()){
+//     console.log(key)
+// }
+
+
+
+// //*Mapten Arraye çevirmek 
+
+// const array2 =[
+//     [81,"Düzce"],
+//     [34,"İstanbul"],
+//     [6,"Ankara"],
+//     [35, "İzmir"]
+
+
+// ]
+// const array = Array.from(map1);
+
+// array.forEach((value,key)=>{
+//     console.log(value[1])
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
